@@ -1,4 +1,8 @@
 <?php
+function ave(){
+    return "<span style='color:red'>A</span><span style='color:green'>V</span><span style='color:blue'>E</span>";
+}
+
 ?>
 <html>
 <head>

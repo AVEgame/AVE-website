@@ -1,14 +1,16 @@
 <?php
 include("intro.php");
 ?>
-Welcome to the AVE: Adventure! Villainy! Excitement! website. AVE is a text-based game engine written by
-<a href='http://mscroggs.co.uk'>Matthew Scroggs</a> and Gin Grasso.
+<div class='maintext'>
+Welcome to the <?php echo ave();?>: Adventure! Villainy! Excitement! website. <?php echo ave();?> is a text-based game engine written by
+<a href='http://mscroggs.co.uk'>Matthew Scroggs</a> and <a href='https://github.com/giannie'>Gin Grasso</a>.
 <br /><br />
-You can now play AVE games online <a href='/play'>here</a>.
+You can now play <?php echo ave();?> games online <a href='/play'>here</a>.
 <br /><br />
-If you would like to write your own games for AVE, have a look at our
+If you would like to write your own games for <?php echo ave();?>, have a look at our
 <a href='https://github.com/mscroggs/AVE'>GitHub repository</a>. More information about making games for
-AVE will appear here soon...
+<?php echo ave();?> will appear here soon...
+</div>
 <?php
 include("outro.php");
 ?>

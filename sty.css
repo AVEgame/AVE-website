@@ -1,10 +1,18 @@
 .top {background-color:#2f0923;position:absolute;top:0;left:0;right:0;height:100px;text-align:center}
-body {margin-top:105px;font-family:monospace;margin-bottom:15px}
+body {margin-top:105px;font-family:monospace;margin-bottom:20px}
 
-.foot {position:fixed;text-align:center;right:0px;left:0px;bottom:0;font-size:10px;color:white;background-color:#2f0923;height:12px}
+.foot {position:fixed;text-align:center;right:0px;left:0px;bottom:0;font-size:10px;color:white;background-color:#2f0923;height:14px;padding-top:2px}
 
-.foot a, .foot a:active, .foot a:link, .foot a:visited, foot a:hover
+.foot a, .foot a:active, .foot a:link, .foot a:visited, .foot a:hover
     {text-decoration:none}
 .foot a, .foot a:active, .foot a:link, .foot a:visited
-    {color:#3333FF}
-.foot a:hover {color:#0000FF}
+    {color:#8888FF}
+.foot a:hover {color:88FF88}
+
+.maintext {margin:auto;width:640px}
+
+a, a:active, a:link, a:visited, a:hover
+    {text-decoration:none}
+a, a:active, a:link, a:visited
+    {color:#0000FF}
+a:hover {color:#00FF00}
