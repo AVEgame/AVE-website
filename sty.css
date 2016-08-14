@@ -1,11 +1,3 @@
 .top {background-color:#2f0923;position:absolute;top:0;left:0;right:0;height:100px;text-align:center}
 body {margin-top:105px;font-family:monospace}
 
-.game {background-color:#2f0923;border:2px solid black;width:600px;height:400px;font-weight:bold}
-.roominfo {color:white;width:430px;float:left;height:250px}
-.inventory {border:3px solid blue;background-color:blue;color:yellow;width:164px;float:left;height:239px}
-.menu {width:596px;height:150px;margin-top:250px}
-.menuitem {background-color:blue;color:yellow;width:100%;padding:2px;cursor:pointer;cursor:hand}
-.menuitem:hover {color:blue;background-color:yellow}
-.gameend {left:100px;width:352px;margin-right:-396px;border:2px solid black;height:80px;margin-bottom:-124px;
-          top:100px;text-align:center;position:relative;color:yellow;background-color:blue;padding:20px;display:none}
