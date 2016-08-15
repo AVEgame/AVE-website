@@ -14,5 +14,5 @@ body {margin-top:105px;font-family:monospace;margin-bottom:20px}
 a, a:active, a:link, a:visited, a:hover
     {text-decoration:none}
 a, a:active, a:link, a:visited
-    {color:#0000FF}
-a:hover {color:#00FF00}
+    {color:blue}
+a:hover {color:green}
