@@ -14,5 +14,23 @@ body {margin-top:105px;font-family:monospace;margin-bottom:20px}
 a, a:active, a:link, a:visited, a:hover
     {text-decoration:none}
 a, a:active, a:link, a:visited
-    {color:#0000FF}
-a:hover {color:#00FF00}
+    {color:blue}
+a:hover {color:green}
+
+@media (min-width:876px){
+.sidebar {position:absolute;left:5px;top:105px;width:113px;text-align:right;font-size:22px}
+.sidebar a {display:block}
+}
+@media (max-width:876px){
+.sidebar {position:static;margin:auto;text-align:center;width:640px;margin-top:-3px;margin-bottom:5px;font-size:16px}
+.sidebar a {display:inline;margin-left:5px;margin-right:5px}
+}
+
+.sidebar a, .sidebar a:active, .sidebar a:link, .sidebar a:visited, .sidebar a:hover
+    {text-decoration:none;font-weight:bold}
+.sidebar a, .sidebar a:active, .sidebar a:link, .sidebar a:visited
+    {color:#2f0923}
+.sidebar a.red:hover {color:red}
+.sidebar a.blue:hover {color:blue}
+.sidebar a.green:hover {color:green}
+
