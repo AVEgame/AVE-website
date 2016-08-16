@@ -30,6 +30,6 @@ a:hover {color:green}
     {text-decoration:none;font-weight:bold}
 .sidebar a, .sidebar a:active, .sidebar a:link, .sidebar a:visited
     {color:#2f0923}
-.sidebar a.red:hover {color:red}
-.sidebar a.blue:hover {color:blue}
-.sidebar a.green:hover {color:green}
+a.red:hover {color:red}
+a.blue:hover {color:blue}
+a.green:hover {color:green}
