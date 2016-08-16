@@ -3,22 +3,22 @@ include("intro.php");
 
 function person($img, $name1, $name2, $nick, $role, $twitter="", $website="", $github=""){
     $out = "<tr><td>";
-    $out.= "<img src='img/team/".$img.".png' class='team'>";
+    $out.= "<img src='/img/team/".$img.".png' class='team'>";
     $out.= "</td><td>";
     $out.= $name1." (\"".$nick."\") ".$name2;
     $out.= "<br />";
     $out.= $role;
     $out.= "<br />";
     if($website!=""){
-        $out.="<img src='img/icons/website.png' class='icon'>";
+        $out.="<img src='/img/icons/website.png' class='icon'>";
         $out.="<a href='http://".$website."' target='new'>".$website."</a><br />";
     }
     if($twitter!=""){
-        $out.="<img src='img/icons/twitter.png' class='icon'>";
+        $out.="<img src='/img/icons/twitter.png' class='icon'>";
         $out.="<a href='https://twitter.com/".$twitter."' target='new'>@".$twitter."</a><br />";
     }
     if($github!=""){
-        $out.="<img src='img/icons/github.png' class='icon'>";
+        $out.="<img src='/img/icons/github.png' class='icon'>";
         $out.="<a href='http://github.com/".$github."' target='new'>".$github."</a><br />";
     }
     $out.="</td></tr>";

@@ -9,7 +9,7 @@ body {margin-top:105px;font-family:monospace;margin-bottom:20px}
     {color:#8888FF}
 .foot a:hover {color:88FF88}
 
-.maintext {margin:auto;width:640px}
+.maintext {margin:auto;width:640px;line-height:1.4em}
 iframe#git {width:640px;height:400px}
 
 a, a:active, a:link, a:visited, a:hover
@@ -39,4 +39,7 @@ a.green:hover {color:green}
 table.invisible {border:0;margin:0;padding:0}
 img.team {background-color:#2f0923;width:100px;height:100px}
 
-img.icon {vertical-align:middle;margin-right:3px;height:15px}
+img.icon {vertical-align:middle;height:15px}
+.maintext img {padding:2px}
+.source {color:#2f0923;background-color:#DDEECC}
+.source.line {margin-left:20px}
