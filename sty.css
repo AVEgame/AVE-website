@@ -10,12 +10,12 @@ body {margin-top:105px;font-family:monospace;margin-bottom:20px}
 .foot a:hover {color:88FF88}
 
 .maintext {margin:auto;width:640px}
+iframe#git {width:640px;height:400px}
 
 a, a:active, a:link, a:visited, a:hover
     {text-decoration:none}
-a, a:active, a:link, a:visited
-    {color:blue}
-a:hover {color:green}
+.maintext a, .maintext a:active, .maintext a:link, .maintext a:visited
+    {color:#2f0923;border-bottom: 1px dotted #2f0923;}
 
 @media (min-width:890px){
 .sidebar {position:absolute;left:5px;top:105px;width:113px;text-align:right;font-size:22px}

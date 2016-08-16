@@ -10,19 +10,20 @@ function tildas(){
 <html>
 <head>
 <title>AVE: Adventure! Villainy! Excitement!</title>
-<link rel='stylesheet' href='/sty.css'>
+<link rel='stylesheet' href='/sty.css?new2'>
 <link rel='stylesheet' href='/ave/sty.css'>
 </head>
 <body>
 <div class='top'><a href='/'><img src='/top.png'></a></div>
 <div class='sidebar'>
-<a class='red' href='/'>home</a>
-<a class='green' href='/play'>play</a>
-<a class='blue' href='/make'>write</a>
-<a class='red' href='/library'>library</a>
+<a href='/'>home</a>
+<a href='/play'>play</a>
+<a href='/make'>write</a>
+<a href='/library'>library</a>
 <?php echo tildas();?>
-<a class='red' href='/versions/python'>python</a>
-<a class='green' href='/versions/badge'>bagde</a>
+<a href='/versions/python'>python</a>
+<a href='/versions/badge'>bagde</a>
+<a href='/git'>GitHub</a>
 <?php echo tildas();?>
-<a class='red' href='/team'>team</a>
+<a href='/team'>team</a>
 </div>

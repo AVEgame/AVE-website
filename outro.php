@@ -5,9 +5,9 @@
 <script type='text/javascript'>
 l = document.links;
 cols = Array("red","green","blue")
-for(var i=0; i<l.length; i++) {
+for(var i=1; i<l.length-1; i++) {
 //  alert(l[i].href);
-    l[i].className = cols[i%3];
+    l[i].className = cols[(i-1)%3];
 }
 </script>
 </body>
