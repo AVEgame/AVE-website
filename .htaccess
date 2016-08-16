@@ -9,4 +9,5 @@ RewriteRule error/([0-9]*)$ error.php?e=$1
 RewriteRule play/?$ ave/select.php
 RewriteRule ave/games/?$ ave/select.php
 RewriteRule play/(.*)\.ave$ ave/game.php?title=$1
-
+RewriteRule make/?$ make.php
+RewriteRule library/?$ lib.php

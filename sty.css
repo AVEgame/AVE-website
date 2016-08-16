@@ -16,3 +16,20 @@ a, a:active, a:link, a:visited, a:hover
 a, a:active, a:link, a:visited
     {color:blue}
 a:hover {color:green}
+
+@media (min-width:890px){
+.sidebar {position:absolute;left:5px;top:105px;width:113px;text-align:right;font-size:22px}
+.sidebar a {display:block}
+}
+@media (max-width:890px){
+.sidebar {position:static;margin:auto;text-align:center;width:640px;margin-top:-3px;margin-bottom:5px;font-size:16px}
+.sidebar a {display:inline;margin-left:5px;margin-right:5px}
+}
+
+.sidebar a, .sidebar a:active, .sidebar a:link, .sidebar a:visited, .sidebar a:hover
+    {text-decoration:none;font-weight:bold}
+.sidebar a, .sidebar a:active, .sidebar a:link, .sidebar a:visited
+    {color:#2f0923}
+.sidebar a.red:hover {color:red}
+.sidebar a.blue:hover {color:blue}
+.sidebar a.green:hover {color:green}
