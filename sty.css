@@ -17,11 +17,11 @@ a, a:active, a:link, a:visited
     {color:blue}
 a:hover {color:green}
 
-@media (min-width:876px){
+@media (min-width:890px){
 .sidebar {position:absolute;left:5px;top:105px;width:113px;text-align:right;font-size:22px}
 .sidebar a {display:block}
 }
-@media (max-width:876px){
+@media (max-width:890px){
 .sidebar {position:static;margin:auto;text-align:center;width:640px;margin-top:-3px;margin-bottom:5px;font-size:16px}
 .sidebar a {display:inline;margin-left:5px;margin-right:5px}
 }
