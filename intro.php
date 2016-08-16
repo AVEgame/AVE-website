@@ -1,6 +1,6 @@
 <?php
 
-$version=file_get_contents("ave/VERSION");
+$version=file_get_contents(str_replace("intro.php","ave/VERSION",__FILE__));
 
 function ave(){
     return "<span style='color:red'>A</span><span style='color:green'>V</span><span style='color:blue'>E</span>";
