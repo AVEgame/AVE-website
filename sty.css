@@ -42,4 +42,4 @@ img.team {background-color:#2f0923;width:100px;height:100px}
 img.icon {vertical-align:middle;height:15px}
 .maintext img {padding:2px}
 .source {color:#2f0923;background-color:#DDEECC}
-.source.line {margin-left:20px}
+div.source {margin-left:20px;margin-right:20px;margin-top:5px;margin-bottom:5px}
