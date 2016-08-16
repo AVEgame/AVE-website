@@ -5,13 +5,13 @@ ErrorDocument 400 /error/400
 ErrorDocument 500 /error/500
 
 RewriteEngine on
-RewriteRule error/([0-9]*)$ error.php?e=$1
-RewriteRule play/?$ ave/select.php
-RewriteRule ave/games/?$ ave/select.php
-RewriteRule play/(.*)\.ave$ ave/game.php?title=$1
-RewriteRule make/?$ make.php
-RewriteRule library/?$ lib.php
-RewriteRule team/? team.php
-RewriteRule git/? git.php
-RewriteRule versions/python/? python.php
-RewriteRule versions/badge/? badge.php
+RewriteRule ^error/([0-9]*)$ error.php?e=$1
+RewriteRule ^play/?$ ave/select.php
+RewriteRule ^ave/games/?$ ave/select.php
+RewriteRule ^play/(.*)\.ave$ ave/game.php?title=$1
+RewriteRule ^make/?$ make.php
+RewriteRule ^library/?$ lib.php
+RewriteRule ^team/?$ team.php
+RewriteRule ^git/?$ git.php
+RewriteRule ^versions/python/?$ python.php
+RewriteRule ^versions/badge/?$ badge.php
