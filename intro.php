@@ -1,4 +1,7 @@
 <?php
+
+$version=file_get_contents("ave/VERSION");
+
 function ave(){
     return "<span style='color:red'>A</span><span style='color:green'>V</span><span style='color:blue'>E</span>";
 }
@@ -14,7 +17,7 @@ function tildas(){
 <link rel='stylesheet' href='/ave/sty.css'>
 </head>
 <body>
-<div class='top'><a href='/'><img src='/top.png'></a></div>
+<div class='top'><a href='/'><img src='/top.png'></a><div class='version'>v<?php echo $version;?></div></div>
 <div class='sidebar'>
 <a href='/'>home</a>
 <a href='/play'>play</a>
@@ -27,3 +30,4 @@ function tildas(){
 <?php echo tildas();?>
 <a href='/team'>team</a>
 </div>
+<div class='maintext'>

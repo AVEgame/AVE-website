@@ -33,3 +33,5 @@ a, a:active, a:link, a:visited, a:hover
 a.red:hover {color:red}
 a.blue:hover {color:blue}
 a.green:hover {color:green}
+
+.version {position:absolute;bottom:2px;right:5px;z-index:3;background-color:#2f0923;color:#FFFFFF}
