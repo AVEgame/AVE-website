@@ -5,14 +5,14 @@ $til=0;
 function ave(){
     return "<span style='color:red'>A</span><span style='color:green'>V</span><span style='color:blue'>E</span>";
 }
-function tildas(){
+function tildas($title=false){
     global $til;
     $out="<span style='color:red'";
-    if($til%3!=0){$out.=" class='optional'";}
+    if($til%3!=0 && $title){$out.=" class='optional'";}
     $out.=">~</span> <span style='color:green'";
-    if($til%3!=1){$out.=" class='optional'";}
+    if($til%3!=1 && $title){$out.=" class='optional'";}
     $out.=">~</span> <span style='color:blue'";
-    if($til%3!=2){$out.=" class='optional'";}
+    if($til%3!=2 && $title){$out.=" class='optional'";}
     $out.=">~</span> ";
     $til += 1;
     return $out;
@@ -32,11 +32,11 @@ function tildas(){
 <a href='/play'>play</a>
 <a href='/make'>write</a>
 <a href='/library'>library</a>
-<?php echo tildas();?>
+<?php echo tildas(true);?>
 <a href='/versions/python'>python</a>
 <a href='/versions/badge'>bagde</a>
 <a href='/git'>GitHub</a>
-<?php echo tildas();?>
+<?php echo tildas(true);?>
 <a href='/team'>team</a>
 </div>
 <div class='maintext'>
