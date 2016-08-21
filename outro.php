@@ -5,10 +5,14 @@
 
 <script type='text/javascript'>
 l = document.links;
+
+col = 0
 cols = Array("red","green","blue")
 for(var i=1; i<l.length-1; i++) {
-//  alert(l[i].href);
-    l[i].className = cols[(i-1)%3];
+    if(l[i].className!="invisible"){
+        l[i].className = cols[col%3];
+        col++
+    }
 }
 </script>
 </body>
