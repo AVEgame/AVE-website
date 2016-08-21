@@ -16,5 +16,9 @@ RewriteRule ^make/?$ make.php
 RewriteRule ^library/?$ lib.php
 RewriteRule ^team/?$ team.php
 RewriteRule ^git/?$ git.php
+RewriteRule ^add/upload/?$ add/upload.php
+RewriteRule ^backend/approve/(.*)$ backend/approve.php?file=$1
+RewriteRule ^backend/deny/(.*)$ backend/deny.php?file=$1
 RewriteRule ^versions/python/?$ python.php
 RewriteRule ^versions/badge/?$ badge.php
+RewriteRule ^versions/apps/?$ apps.php
