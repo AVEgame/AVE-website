@@ -3,15 +3,15 @@
 $version=file_get_contents(str_replace("intro.php","ave/VERSION",__FILE__));
 $til=0;
 function ave(){
-    return "<span style='color:red'>A</span><span style='color:green'>V</span><span style='color:blue'>E</span>";
+    return "<span style='color:#CC0000'>A</span><span style='color:#4d9906'>V</span><span style='color:#32619e'>E</span>";
 }
 function tildas($title=false){
     global $til;
-    $out="<span style='color:red'";
+    $out="<span style='color:#cc0000'";
     if($til%3!=0 && $title){$out.=" class='optional'";}
-    $out.=">~</span> <span style='color:green'";
+    $out.=">~</span> <span style='color:#4d9906'";
     if($til%3!=1 && $title){$out.=" class='optional'";}
-    $out.=">~</span> <span style='color:blue'";
+    $out.=">~</span> <span style='color:#32619e'";
     if($til%3!=2 && $title){$out.=" class='optional'";}
     $out.=">~</span> ";
     $til += 1;

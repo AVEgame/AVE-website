@@ -32,9 +32,9 @@ span.optional {display:none}
     {text-decoration:none;font-weight:bold}
 .sidebar a, .sidebar a:active, .sidebar a:link, .sidebar a:visited
     {color:#2f0923}
-a.red:hover {color:red}
-a.blue:hover {color:blue}
-a.green:hover {color:green}
+a.red:hover {color:#cc0000}
+a.blue:hover {color:#32619e}
+a.green:hover {color:#4d9906}
 
 .version {position:absolute;bottom:2px;right:5px;z-index:3;background-color:#2f0923;color:#FFFFFF}
 
