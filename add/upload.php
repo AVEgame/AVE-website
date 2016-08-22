@@ -25,6 +25,7 @@ if(file_exists($tempupto)){
 
 
 rename($_FILES["avefile"]["tmp_name"],$tempupto);
+chmod($tempupto,0755);
 include("../intro.php");
 echo("Thank you for submitting you game. You will be able to play it at <a href='http://avegame.co.uk/play/user/".$fname."'>avegame.co.uk/play/user/".$fname."</a> once we have approved it. Please be patient, we'll approve it as soon as we can.");
 include("../outro.php");
