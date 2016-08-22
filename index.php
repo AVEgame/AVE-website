@@ -7,8 +7,8 @@ Welcome to the <?php echo ave();?>: Adventure! Villainy! Excitement! website. <?
 You can now play <?php echo ave();?> games online <a href='/play'>here</a>.
 <br /><br />
 If you would like to write your own games for <?php echo ave();?>, have a look at our
-<a href='https://github.com/mscroggs/AVE'>GitHub repository</a>. More information about making games for
-<?php echo ave();?> will appear here soon...
+<a href='/make'>these instructions</a>. Once you have written a game, you can upload it to the game library <a href='/add'>here</a>.
+You can view all user submitted games <a href='/library'>here</a>.
 <?php
 include("outro.php");
 ?>
