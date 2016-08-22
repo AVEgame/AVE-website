@@ -7,7 +7,9 @@ ErrorDocument 500 /error/500
 RewriteEngine on
 RewriteRule ^error/([0-9]*)$ error.php?e=$1
 RewriteRule ^play/?$ ave/select.php
+RewriteRule ^play/user/?$ ave/select.php?user=1
 RewriteRule ^ave/games/?$ ave/select.php
+RewriteRule ^ave/games/user/?$ ave/select.php?user=1
 RewriteRule ^play/([^/]*)\.ave$ ave/game.php?title=$1
 RewriteRule ^play/user/([^/]*)\.ave$ ave/game.php?title=$1&user=YES
 RewriteRule ^download/([^/]*)\.ave$ ave/games/$1.ave
