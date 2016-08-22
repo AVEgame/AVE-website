@@ -2,7 +2,6 @@
 include("../intro.php");
 ?>
 
-The following games need approval:
 <script type='text/javascript'>
 function showme(id){
     document.getElementById("div_"+id).style.display = "block"
@@ -16,8 +15,10 @@ function hideme(id){
 }
 </script>
 <?php
+$nxt="The following games need approval:";
 foreach(scandir("../../games_for_approval") as $file){
     if(substr($file,-4)==".ave"){
+        echo($nxt);$nxt="";
         echo("<br />");
         echo("<b>".$file."</b> ");
         echo("<a href='/backend/approve/".$file."' style='color:#4d9906'>Approve</a> ");
@@ -29,6 +30,9 @@ foreach(scandir("../../games_for_approval") as $file){
         $cont = str_replace("\n","<br />",$cont);
         echo("<div class='source' id='div_".$file."' style='display:none'>".$cont."</div>");
     }
+}
+if($nxt=="The following games need approval:"){
+    echo("No games awaiting approval");
 }
 ?>
 
