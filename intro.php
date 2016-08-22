@@ -22,7 +22,7 @@ function tildas($title=false){
 <html>
 <head>
 <title>AVE: Adventure! Villainy! Excitement!</title>
-<link rel='stylesheet' href='/sty.css?new2'>
+<link rel='stylesheet' href='/sty.css'>
 <link rel='stylesheet' href='/ave/sty.css'>
 </head>
 <body>
