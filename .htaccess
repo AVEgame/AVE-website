@@ -9,9 +9,10 @@ RewriteRule ^error/([0-9]*)$ error.php?e=$1
 RewriteRule ^play/?$ ave/select.php
 RewriteRule ^ave/games/?$ ave/select.php
 RewriteRule ^play/([^/]*)\.ave$ ave/game.php?title=$1
-RewriteRule ^download/([^/]*)\.ave$ ave/games/$1.ave
 RewriteRule ^play/user/([^/]*)\.ave$ ave/game.php?title=$1&user=YES
+RewriteRule ^download/([^/]*)\.ave$ ave/games/$1.ave
 RewriteRule ^download/user/([^/]*)\.ave$ usergames/$1.ave
+RewriteRule ^download/([^/]*)\.json$ ave/avetojs.php?game=$1
 RewriteRule ^make/?$ make.php
 RewriteRule ^library/?$ lib.php
 RewriteRule ^team/?$ team.php
