@@ -11,8 +11,8 @@ You can do that <a href='/play'>here</a>.
 <img src='/img/badge.jpg'><br />
 <?php echo ave();?> running on the EMF <a href='https://badge.emfcamp.org/wiki/TiLDA_MK3' target='new'>TiLDA Mk&pi;</a> badge.
 </div>
-<?php echo ave();?> began life as a <a href='/versions/python'>Python game</a>. At <a href='https://emfcamp.org' target='new'>Electromagnetic Field 2016 (EMF)</a>
-we made a version of <?php echo ave();?> that runs on the <a href='https://badge.emfcamp.org/wiki/TiLDA_MK3' target='new'>TiLDA Mk&pi;</a> badge
+<?php echo ave();?> began life as a <a href='/docs/python.md'>Python game</a>. At <a href='https://emfcamp.org' target='new'>Electromagnetic Field 2016 (EMF)</a>
+we made a version of <?php echo ave();?> that runs on the <a href='/docs/badge.md'>TiLDA Mk&pi; badge</a>
 that was given to every attendee. Shortly after EMF, we began work on a javascript version of <?php echo ave();?>, this website and 
 Android and iOS apps (coming soon).
 <br /><br />

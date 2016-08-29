@@ -49,9 +49,8 @@ function tildas($title=false){
 <a href='/make'>write</a>
 <a href='/library'>library</a>
 <?php echo tildas(true);?>
-<a href='/versions/python'>python</a>
-<a href='/versions/badge'>badge</a>
-<a href='/versions/apps'>apps</a>
+<a href='/docs/versions.md'>versions</a>
+<a href='/docs/index.md'>docs</a>
 <a href='/git'>GitHub</a>
 <?php echo tildas(true);?>
 <a href='/team'>team</a>

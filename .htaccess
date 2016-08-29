@@ -26,3 +26,4 @@ RewriteRule ^backend/deny/(.*)$ backend/deny.php?file=$1
 RewriteRule ^versions/python/?$ python.php
 RewriteRule ^versions/badge/?$ badge.php
 RewriteRule ^versions/apps/?$ apps.php
+RewriteRule ^docs/([^/]*)\.md$ docs.php?file=$1.md
