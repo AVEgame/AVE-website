@@ -1,5 +1,6 @@
 <?php
 include("../intro.php");
+include("intro.php");
 
 $current = str_replace("approve.php","../../games_for_approval/".$_GET['file'],__FILE__);
 $target = str_replace("approve.php","../usergames/".$_GET['file'],__FILE__);

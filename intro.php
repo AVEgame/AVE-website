@@ -1,5 +1,21 @@
 <?php
 
+if(!isset($_SERVER['HTTP_REFERER']) || (isset($_SERVER['HTTP_REFERER']) && !preg_match("/^http:\/\/(www\.)?avegame\.co\.uk/i",$_SERVER['HTTP_REFERER']))){
+
+if(isset($_SERVER['HTTP_REFERER'])){$ref=$_SERVER['HTTP_REFERER'];} else {$ref="?";}
+$f=fopen(str_replace("intro.php","backend/referers",__FILE__),'a');
+fwrite($f,date("Y-m-d H:i:s")."|".$_SERVER['REMOTE_ADDR']."|".$ref."
+");
+fclose($f);
+}
+
+$thispage=strtolower($_SERVER['REQUEST_URI']);
+$thispage=preg_replace('/\/$/','',$thispage)."
+";
+$ff=fopen(str_replace("intro.php","backend/vtoday",__FILE__),"a");
+fwrite($ff,$thispage);
+fclose($ff);
+
 $version=file_get_contents(str_replace("intro.php","ave/VERSION",__FILE__));
 $til=0;
 function ave(){

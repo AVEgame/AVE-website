@@ -48,3 +48,6 @@ img.icon.big {height:30px}
 .source {color:#2f0923;background-color:#DDEECC}
 div.source {margin-left:20px;margin-right:20px;margin-top:5px;margin-bottom:5px}
 
+.imgl, .imgr {text-align:center;border: 1px dotted #2f0923;padding-bottom:5px}
+.imgr {float:right;margin-left:5px}
+.imgl {float:left;margin-right:5px}

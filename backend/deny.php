@@ -1,5 +1,6 @@
 <?php
 include("../intro.php");
+include("intro.php");
 
 function noslash($string){
     for($i=0;$i<strlen($string);$i++){

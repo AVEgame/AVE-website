@@ -1,5 +1,6 @@
 <?php
 include("../intro.php");
+include("intro.php");
 ?>
 
 <script type='text/javascript'>
