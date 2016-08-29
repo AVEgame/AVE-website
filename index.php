@@ -5,7 +5,7 @@ Welcome to the <?php echo ave();?>: Adventure! Villainy! Excitement! website. <?
 <a href='http://mscroggs.co.uk'>Matthew Scroggs</a> and <a href='https://github.com/giannie'>Gin Grasso</a>.
 <br /><br />
 Before reading any more, you should have a go at playing <?php echo ave();?>.
-You can play <?php echo ave();?> games <a href='/play'>here</a>.
+You can do that <a href='/play'>here</a>.
 <br /><br />
 <div class='imgr'>
 <img src='/img/badge.jpg'><br />
@@ -14,7 +14,7 @@ You can play <?php echo ave();?> games <a href='/play'>here</a>.
 <?php echo ave();?> began life as a <a href='/versions/python'>Python game</a>. At <a href='https://emfcamp.org' target='new'>EMF Camp 2016</a>
 we made a version of <?php echo ave();?> that runs on the <a href='https://badge.emfcamp.org/wiki/TiLDA_MK3' target='new'>TiLDA Mk&pi;</a> badge
 that was given to every attendee. Shortly after EMF Camp, we began work on a javascript version of <?php echo ave();?>, this website and 
-Android and iOs apps (coming soon).
+Android and iOS apps (coming soon).
 <br /><br />
 You can now use this javascript version to play <?php echo ave();?> games online <a href='/play'>here</a>. The playable games include user
 contibuted games.
