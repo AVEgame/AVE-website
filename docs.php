@@ -26,7 +26,7 @@ while(preg_match("/<\/li>\n+\*\* ([^\n]*)\n+/",$text)){
 }
 $text = preg_replace("/<li>([^\n]*)<\/li>/","<ul><li>$1</li></ul>",$text);
 $text = preg_replace("/<\/ul>\n*<ul>/","",$text);
-$text = preg_replace("/\%([^\%]*)\%/","<span style='color:#4d9906'>&lt;<i>$1</i>&gt;</span>",$text);
+$text = preg_replace("/\%\%([^\%]*)\%\%/","<span style='color:#4d9906'>&lt;<i>$1</i>&gt;</span>",$text);
 $text = preg_replace("/\n\n+/","\n<br /><br />\n",$text);
 $text = str_replace(" AVE"," ".ave(),$text);
 
