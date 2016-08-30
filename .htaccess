@@ -16,6 +16,8 @@ RewriteRule ^download/([^/]*)\.ave$ ave/games/$1.ave
 RewriteRule ^download/user/([^/]*)\.ave$ usergames/$1.ave
 RewriteRule ^download/([^/]*)\.json$ ave/avetojs.php?game=$1
 RewriteRule ^download/user/([^/]*)\.json$ ave/avetojs.php?game=$1&user=YES
+RewriteRule ^download/([^/]*)\.items$ ave/avetoitems.php?game=$1
+RewriteRule ^download/user/([^/]*)\.items$ ave/avetoitems.php?game=$1&user=YES
 RewriteRule ^make/?$ make.php
 RewriteRule ^library/?$ lib.php
 RewriteRule ^team/?$ team.php

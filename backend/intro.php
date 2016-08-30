@@ -6,7 +6,7 @@
 ~
 <a href='/backend/update.php'>UPDATE GAME LIST</a>
 ~
-<a href='/backend/referers'>REFERERS</a>
+<a href='/backend/referers.php'>REFERERS</a>
 ~
-<a href='/backend/vtoday'>PAGEVIEWS</a>
+<a href='/backend/vtoday.php'>PAGEVIEWS</a>
 </div>
