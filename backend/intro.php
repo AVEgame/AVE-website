@@ -10,5 +10,5 @@
 ~
 <a href='/backend/vtoday.php'>PAGEVIEWS</a>
 ~
-<a href='https://github.com/issues?user=AVEgame' target='new'>GitHub issues</a>
+<a href='https://github.com/issues?user=AVEgame' target='new'>GITHUB ISSUES</a>
 </div>
