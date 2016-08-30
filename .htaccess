@@ -23,7 +23,6 @@ RewriteRule ^git/?$ git.php
 RewriteRule ^add/upload/?$ add/upload.php
 RewriteRule ^backend/approve/(.*)$ backend/approve.php?file=$1
 RewriteRule ^backend/deny/(.*)$ backend/deny.php?file=$1
-RewriteRule ^versions/python/?$ python.php
-RewriteRule ^versions/badge/?$ badge.php
-RewriteRule ^versions/apps/?$ apps.php
+RewriteRule ^versions/python/?$ docs.php?file=python.md
+RewriteRule ^versions/badge/?$ docs.php?file=emf.md
 RewriteRule ^docs/([^/]*)\.md$ docs.php?file=$1.md
