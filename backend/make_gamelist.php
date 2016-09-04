@@ -26,6 +26,9 @@ function getDetails($game){
     $f = file_get_contents($game);
     $f = explode("\n",$f);
     $active = true;
+    $title = "";
+    $description = "";
+    $author = "anonymous";
     foreach($f as $line){if(strlen($line)>0){
         if(substr($line,0,2) == "==" && substr($line,-2) == "=="){
             $title = clean(substr($line,2,-2));
