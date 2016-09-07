@@ -15,7 +15,7 @@ function spacing($matches){
 }
 $text = preg_replace_callback("/\n+    ([^\n]*)\n+/","spacing",$text);
 $text = preg_replace("/`([^\n`]*)`/","<span class='source'>$1</span>",$text);
-$text = preg_replace("/\[([^\]]*)\]\(https?:\/\/([^\)]*)\)/","<a href='$2' target='new'>$1</a>",$text);
+$text = preg_replace("/\[([^\]]*)\]\((https?:\/\/[^\)]*)\)/","<a href='$2' target='new'>$1</a>",$text);
 $text = preg_replace("/\[([^\]]*)\]\(([^\)]*)\)/","<a href='$2'>$1</a>",$text);
 while(preg_match("/\n+\* ([^\n]*)\n+/",$text)){
     $text = preg_replace("/\n+\* ([^\n]*)\n+/","\n<li>$1</li>\n",$text);
