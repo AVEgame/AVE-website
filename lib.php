@@ -13,8 +13,8 @@ foreach($games as $key=>$value){
     echo("<br />");
     echo("<b>".$value["title"]."</b> by ".$value["author"]);
     echo("<br />");
-    echo($value["desc"]);
-    echo("<br />");
+    if($value["desc"]!=""){echo($value["desc"]);
+    echo("<br />");}
     if(substr($key,0,5)!="user/" && $value["active"]){echo("<img src='/img/icons/tick.png' class='icon big' title='This game is included in the default library'> ");}
     echo("<a class='invisible' href='/play/".$key."'><img src='/img/icons/play.png' class='icon big' title='Play this game online'></a> ");
     echo("<a class='invisible' href='/download/".$key."'><img src='/img/icons/download.png' class='icon big' title='Download this game'></a> ");
