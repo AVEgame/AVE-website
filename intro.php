@@ -40,6 +40,7 @@ function tildas($title=false){
 <title>AVE: Adventure! Villainy! Excitement!</title>
 <link rel='stylesheet' href='/sty.css'>
 <link rel='stylesheet' href='/ave/sty.css'>
+<script type='text/javascript' src='/konami.js'></script>
 </head>
 <body>
 <div class='top'><a href='/'><img src='/top.png'></a><div class='version'>v<?php echo $version;?></div></div>
