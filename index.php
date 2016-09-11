@@ -3,7 +3,7 @@ include("intro.php");
 ?>
 Welcome to the <?php echo ave();?>: Adventure! Villainy! Excitement! website. <?php echo ave();?> is a text-based game engine written by
 <a href='http://mscroggs.co.uk'>Matthew Scroggs</a> and <a href='https://github.com/giannie'>Gin Grasso</a>.
-<br /><br />
+<h2>Play AVE</h2>
 Before reading any more, you should have a go at playing <?php echo ave();?>.
 You can do that <a href='/play'>here</a>.
 <br /><br />
@@ -16,13 +16,15 @@ we made a version of <?php echo ave();?> that runs on the <a href='/docs/badge.m
 that was given to every attendee. Shortly after EMF, we began work on a javascript version of <?php echo ave();?>, this website and 
 Android and iOS apps (coming soon).
 <br /><br />
-You can now use this javascript version to play <?php echo ave();?> games online <a href='/play'>here</a>. The playable games include user
-contibuted games.
-<br /><br />
+If you want to play AVE on a non-Linux/Mac computer, you can download our <a href='/docs/virtualbox.md'>VirtualBox image</a>.
+<h2>Making Your Own Games</h2>
 If you would like to write your own games for <?php echo ave();?>, have a look at
 <a href='/make'>these instructions</a>. Once you have written a game, you can submit it to the game library <a href='/add'>here</a>.
 You can view all user submitted games <a href='/library'>in the library</a>. Once a game has been included in the game library, it will become
 playable on any version of <?php echo ave();?> (as long as the player is connected to the internet).
+<h2>Contributing to AVE</h2>
+If you want to edit the source code of AVE, it is available on <a href='/git'>GitHub</a>.
+We discuss much of the development of AVE on <a href='/docs/irc.md'>IRC</a>.
 <?php
 include("outro.php");
 ?>
