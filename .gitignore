@@ -6,3 +6,6 @@ backend/vtoday
 backend/referers
 docs_files
 docs_files/*
+backend/pagv
+backend/referers-summary
+
