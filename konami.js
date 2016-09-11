@@ -128,7 +128,7 @@ easter_egg = new Konami(function() {
     scorediv.style.paddingRight = 5
     scorediv.style.paddingTop = 2
     scorediv.style.paddingBottom = 2
-    scorediv.innerHTML = "Pop the balloons before they reach the top.<br />Score: 0"
+    scorediv.innerHTML = "Pop the balloons<br />Score: 0"
     document.body.appendChild(scorediv)
     posA=Array()
     for(i=0;i<10;i++){
@@ -189,5 +189,5 @@ function moveballoon(){
         posA[i][0].style.top  = posA[i][2]
         posA[i][0].style.left = posA[i][1]
     }
-    scorediv.innerHTML = "Pop the balloons before they reach the top.<br />Score: "+score
+    scorediv.innerHTML = "Pop the balloons<br />Score: "+score
 }
