@@ -158,7 +158,7 @@ function resetballoon(i){
     }
     w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    posA[i][1] = Math.floor(Math.random()*(w-30)+15)
+    posA[i][1] = Math.floor(Math.random()*(w-40)+5)
     posA[i][2] = h-50
     posA[i][3] = 1+Math.floor(7*Math.random())
     posA[i][4] = 0
