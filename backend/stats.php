@@ -3,9 +3,12 @@
 include('../intro.php');
 include('intro.php');
 
-$show=100;
+$showdefault = 10;
+$show2default = 100;
+
+$show=$showdefault;
 if(isset($_GET['show'])){$show=$_GET['show'];}
-$show2=1000;
+$show2=$show2default;
 if(isset($_GET['show2'])){$show2=$_GET['show2'];}
 
 $pagv=file_get_contents("referers-summary");
@@ -15,10 +18,10 @@ $pagv=explode("
 
 echo("<h2>Referrers by Date</h2>
 ");
-if($show==100){
+if($show==$showdefault){
 echo(markup("<p><a href='?show=0' >Show more</a></p>"));
 } else {
-echo(markup("<p><a href='?show=100' >Show less</a></p>"));
+echo(markup("<p><a href='?show=".$showdefault."' >Show less</a></p>"));
 
 }
 echo("
@@ -129,10 +132,10 @@ $pagv=file_get_contents("pagv");
 $pagv=explode("
 ",$pagv);
 echo("<h2>Pageviews</h2>");
-if($show2==1000){
+if($show2==$show2default){
 echo(markup("<p><a href='?show2=50' >Show more</a></p>"));
 } else {
-echo(markup("<p><a href='?show2=1000' >Show less</a></p>"));
+echo(markup("<p><a href='?show2=".$show2default."' >Show less</a></p>"));
 }
 echo("
 <table>

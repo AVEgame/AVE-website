@@ -53,3 +53,5 @@ div.source {margin-left:20px;margin-right:20px;margin-top:5px;margin-bottom:5px}
 .imgl {float:left;margin-right:5px}
 
 h1, h2, h3, h4, h5, h6 {margin-bottom:3px;margin-top:40px}
+
+td.hd, thead {font-weight:bold}
