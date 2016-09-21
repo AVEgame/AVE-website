@@ -58,3 +58,5 @@ td.hd, thead {font-weight:bold}
 
 table, td {border:1px solid black; border-collapse:collapse}
 td {padding:2px; text-align:center}
+
+table.white, td.white {color:#FFFFFF;border-color:#FFFFFF}

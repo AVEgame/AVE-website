@@ -42,7 +42,7 @@ function esc($st){
 }
 
 echo("High Scores<br />
-<table style='color:white'>
+<table class='white'>
 <thead><td>#</td><td>Name</td><td>Score</td></thead>");
 foreach($scores as $key=>$value){
     echo("<tr><td align='center'>".$key."</td><td>".esc($value['name'])."</td><td align='center'>".esc($value['score'])."</td></tr>");
