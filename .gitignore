@@ -8,4 +8,4 @@ docs_files
 docs_files/*
 backend/pagv
 backend/referers-summary
-
+scores.json

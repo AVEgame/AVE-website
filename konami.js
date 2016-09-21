@@ -108,6 +108,7 @@ var Konami = function (callback) {
 
 easter_egg = new Konami(function() {
     score = 0
+    sttime = Date.now()
     f = document.getElementById("foot")
     f.style.background= "transparent"
     f.style.height= "45px"
@@ -143,7 +144,7 @@ easter_egg = new Konami(function() {
         ////    //e.src='/img/balloonpop.png'
         //});
     }
-    setInterval(function(){
+    playB = setInterval(function(){
         moveballoon()
     }, 100);
 
@@ -175,19 +176,37 @@ function pop(i){
 }
 
 function moveballoon(){
-    for(i=0;i<posA.length;i++){
-        //if(posA[i][0].src==test.src){
-        if(posA[i][4]==0){
-            posA[i][2]-=posA[i][3]
-        } else {
-            posA[i][4] += 1
+    now = sttime+30000-Date.now()
+    if(now > 0){
+        for(i=0;i<posA.length;i++){
+            //if(posA[i][0].src==test.src){
+            if(posA[i][4]==0){
+                posA[i][2]-=posA[i][3]
+            } else {
+                posA[i][4] += 1
+            }
+            if(posA[i][4] > 10 || posA[i][2]<=-50 || isNaN(posA[i][1])){
+                if(posA[i][4] == 0){score -= 1}
+                resetballoon(i)
+            }
+            posA[i][0].style.top  = posA[i][2]
+            posA[i][0].style.left = posA[i][1]
         }
-        if(posA[i][4] > 10 || posA[i][2]<=-50 || isNaN(posA[i][1])){
-            if(posA[i][4] == 0){score -= 1}
-            resetballoon(i)
+        scorediv.innerHTML = "Pop the balloons<br />Score: "+score+"<br />Time: "+Math.floor(now/1000)
+    } else {
+        scorediv.innerHTML = "Pop the balloons<br />Score: "+score+"<br />Time: 0"
+        clearInterval(playB)
+        for(i=0;i<posA.length;i++){
+            document.body.removeChild(posA[i][0])
         }
-        posA[i][0].style.top  = posA[i][2]
-        posA[i][0].style.left = posA[i][1]
+        var xobj = new XMLHttpRequest();
+        xobj.open('POST', '/score_add.php', true);
+        xobj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == '200') {
+                scorediv.innerHTML = xobj.responseText;
+            }
+        };
+        xobj.send("score="+score+"&name="+prompt("Please enter your name"));        // send high score and load others
     }
-    scorediv.innerHTML = "Pop the balloons<br />Score: "+score
 }
