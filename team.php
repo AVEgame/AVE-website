@@ -23,17 +23,17 @@ function person($img, $name1, $name2, $nick, $role, $twitter="", $website="", $g
     }
     if($scorpio!=""){
         $out.="<img src='/img/icons/scorpion.png' class='icon'>";
-        $out.=$scorpio."<br />";
+        $out.="<a href='http://scorpi.online/user/".$scorpio."'>".$scorpio."</a><br />";
     }
     $out.="</td></tr>";
     return $out;
 }
 ?><table class='invisible'><?php
-echo person("scroggs","Matthew","Scroggs","Scroggs","Lead programmer; story writer","mscroggs","mscroggs.co.uk","mscroggs");
+echo person("scroggs","Matthew","Scroggs","Scroggs","Lead programmer; story writer","mscroggs","mscroggs.co.uk","mscroggs","mscroggs");
 echo person("gin","Gin","Grasso","Spinny Ginny","Programmer; story writer","","","Giannie");
 echo person("bolt","Alex","Bolton","Bolt","Came up with the name ".ave()."; story writer","AlexDBolton","","boltiboi");
 echo person("alan","Alison","Clarke","Alan","Story writer","aaclarke4","","aaclarke4");
-echo person("adam","Adam","Townsend","Jigsaw","Story writer","pecnut","adamtownsend.com","pecnut","pecnut");
+echo person("adam","Adam","Townsend","Jigsaw","Story writer","pecnut","adamtownsend.com","pecnut");
 ?></table><?php
 
 include("outro.php");

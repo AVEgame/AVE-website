@@ -9,3 +9,5 @@ docs_files/*
 backend/pagv
 backend/referers-summary
 scores.json
+dates
+dates/*
