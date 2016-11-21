@@ -29,6 +29,7 @@ function getDetails($game){
     $title = "";
     $description = "";
     $author = "anonymous";
+    $n=100;
     foreach($f as $line){if(strlen($line)>0){
         if(substr($line,0,2) == "==" && substr($line,-2) == "=="){
             $title = clean(substr($line,2,-2));
@@ -44,13 +45,16 @@ function getDetails($game){
                 $active=false;
             }
         }
+        if(substr($line,0,2) == "@@" && substr($line,-2) == "@@"){
+            $n=clean(substr($line,2,-2))/1;
+        }
     }}
     if(!isset($title) || !isset($author) || !isset($active)){
         return false;
     }
     if(substr($file,0,5)=='user/'){$user=true;}
     else {$user=false;}
-    return Array("title"=>$title,"author"=>$author,"desc"=>$description,"active"=>$active,"user"=>$user);
+    return Array("title"=>$title,"author"=>$author,"desc"=>$description,"active"=>$active,"user"=>$user,"n"=>$n);
 }
 
 $games = Array();
