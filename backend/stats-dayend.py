@@ -79,6 +79,7 @@ with open("referers") as f:
         elif "t.co" in referer: referer="Twitter"
         else:
             referer=referer.strip("http://")
+            referer=referer.strip("www.")
             referer=referer.strip("https://")
             referer=referer.split("/")[0]
         if referdate not in stats_refer:
