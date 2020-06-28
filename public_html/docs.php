@@ -27,7 +27,30 @@ while(preg_match("/<\/li>\n+\*\* ([^\n]*)\n+/",$text)){
 $text = preg_replace("/<li>([^\n]*)<\/li>/","<ul><li>$1</li></ul>",$text);
 $text = preg_replace("/<\/ul>\n*<ul>/","",$text);
 $text = preg_replace("/\%\%([^\%]*)\%\%/","<span style='color:#4d9906'>&lt;<i>$1</i>&gt;</span>",$text);
-$text = preg_replace("/\n\n+/","\n<br /><br />\n",$text);
+
+// table
+function strip_spaces($txt){
+
+}
+function table($matches){
+    $out = "<table>";
+    $rows = "";
+    foreach(explode("\n", $matches[1]) as $row){
+        if(preg_match("/^[\| -]+$/", $row)){
+            $out = str_replace("<table>", "<table>\n<thead>", $out) . "</thead>";
+        } else {
+            $row = preg_replace("/^\|/","<tr><td>", $row);
+            $row = preg_replace("/\|$/","</td></tr>", $row);
+            $out.= str_replace("|","</td><td>", $row) . "\n";
+        }
+    }
+    $out.= "</table>";
+    return $out;
+}
+$text = preg_replace_callback("/\n\n((?:\|[^\n]*\|\n)+)(\n|$)/","table",$text);
+
+
+//$text = preg_replace("/\n\n+/","\n<br /><br />\n",$text);
 $text = str_replace(" AVE"," ".ave(),$text);
 
 echo $text;

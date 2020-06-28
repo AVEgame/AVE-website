@@ -6,10 +6,9 @@ you to write your own games.
 <br /><br />
 Before making your own games, you should download the latest version of <?php echo ave();?>.
 This will allow you to run your game to test it.
-The easiest way to do this is to download the .zip of the latest version:
+The easiest way to do this is to:
 <ul>
-<li><a href='https://github.com/AVEgame/AVE/releases/download/v1.3/AVE1.3-python.zip' target='new'>Python version (Linux/Mac)</a></li>
-<li><a href='/docs/virtualbox.md' target='new'>Running a VirtualBox image (All platforms)</a></li>
+<li><a href='https://github.com/AVEgame/AVE'>download the latest version of <?php echo ave();?> from GitHub</a>.</li>
 </ul>
 Once you have downloaded a version of <?php echo ave();?>, you are ready to write your own game.
 To help you with this, you can use the following documentation:

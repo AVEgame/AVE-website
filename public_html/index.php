@@ -5,8 +5,11 @@ Welcome to the <?php echo ave();?>: Adventure! Villainy! Excitement! website. <?
 <a href='http://mscroggs.co.uk'>Matthew Scroggs</a> and <a href='https://github.com/giannie'>Gin Grasso</a>.
 <h2>Play AVE</h2>
 Before reading any more, you should have a go at playing <?php echo ave();?>.
-You can do that <a href='/play'>here</a>.
 <br /><br />
+<?php
+include("ave/select.php");
+?>
+<h2>About AVE</h2>
 <div class='imgr'>
 <img src='/img/badge.jpg'><br />
 <?php echo ave();?> running on the EMF <a href='https://badge.emfcamp.org/wiki/TiLDA_MK3' target='new'>TiLDA Mk&pi;</a> badge.
@@ -24,7 +27,6 @@ You can view all user submitted games <a href='/library'>in the library</a>. Onc
 playable on any version of <?php echo ave();?> (as long as the player is connected to the internet).
 <h2>Contributing to AVE</h2>
 If you want to edit the source code of AVE, it is available on <a href='/git'>GitHub</a>.
-We discuss much of the development of AVE on <a href='/docs/irc.md'>IRC</a>.
 <?php
 include("outro.php");
 ?>

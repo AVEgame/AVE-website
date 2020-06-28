@@ -9,7 +9,8 @@ body {margin-top:105px;font-family:monospace;margin-bottom:20px}
     {color:#8888FF}
 .foot a:hover {color:88FF88}
 
-.maintext {margin:auto;width:640px;line-height:1.4em}
+.maintext {margin:auto;width:640px; font-size:medium}
+.maintext table {font-size:medium; margin-top:20px}
 iframe#git {width:640px;height:400px}
 
 a, a:active, a:link, a:visited, a:hover
