@@ -52,7 +52,7 @@ function getDetails($game){
     if(!isset($title) || !isset($author) || !isset($active)){
         return false;
     }
-    if(substr($file,0,5)=='user/'){$user=true;}
+    if(substr($game,0,5)=='user/'){$user=true;}
     else {$user=false;}
     return Array("title"=>$title,"author"=>$author,"desc"=>$description,"active"=>$active,"user"=>$user,"n"=>$n);
 }

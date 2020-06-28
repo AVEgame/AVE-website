@@ -20,6 +20,7 @@ foreach($games as $key=>$value){
     echo("<a class='invisible' href='/download/".$key."'><img src='/img/icons/download.png' class='icon big' title='Download this game'></a> ");
     echo("<br />");
 }
+?>
 </script>
 <?php
 echo tildas();
