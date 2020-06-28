@@ -15,5 +15,8 @@ public_html/dates/*
 AVE-docs
 AVE
 AVE.js
+AVE-docs/*
+AVE/*
+AVE.js/*
 
 .*.swp
