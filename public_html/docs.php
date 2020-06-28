@@ -33,7 +33,7 @@ function strip_spaces($txt){
 
 }
 function table($matches){
-    $out = "<table>";
+    $out = "\n\n<table>";
     $rows = "";
     foreach(explode("\n", $matches[1]) as $row){
         if(preg_match("/^[\| -]+$/", $row)){
@@ -44,10 +44,10 @@ function table($matches){
             $out.= str_replace("|","</td><td>", $row) . "\n";
         }
     }
-    $out.= "</table>";
+    $out.= "</table>\n\n";
     return $out;
 }
-$text = preg_replace_callback("/\n\n((?:\|[^\n]*\|\n)+)(\n|$)/","table",$text);
+$text = preg_replace_callback("/((?:\|[^\n]*\|(\n|$))+)/","table",$text);
 
 
 //$text = preg_replace("/\n\n+/","\n<br /><br />\n",$text);
